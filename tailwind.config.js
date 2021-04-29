@@ -4,7 +4,13 @@ module.exports = {
     './resources/css/**/*.css',
   ],
   theme: {
-    extend: {}
+    extend: {
+        colors: {
+            darkBackground: '#20232a',
+            lightBackground: '#282c34',
+            brand: '#61dafb',
+        }
+    }
   },
   variants: {},
   plugins: [
