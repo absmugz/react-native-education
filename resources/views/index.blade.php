@@ -17,5 +17,69 @@
        </div>
    </div>
 
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-brand uppercase tracking-wide font-semibold">Screencasts</h2>
+
+        <div class="categories text-sm grid grid-cols-6 gap-12">
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/ignite.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Ignite</a>
+                <div class="text-gray-400 mt-1">Available to watch.</div>
+            </div>
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/react.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">React Native</a>
+                <div class="text-gray-400 mt-1">Coming Soon.</div>
+            </div>
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/mobx.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Mobx State Tree</a>
+                <div class="text-gray-400 mt-1">Coming Soon.</div>
+            </div>
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/redux.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Redux</a>
+                <div class="text-gray-400 mt-1">Coming Soon.</div>
+            </div>
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/storybook.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Storybook</a>
+                <div class="text-gray-400 mt-1">Coming Soon.</div>
+            </div>
+            <div class="game mt-8">
+                <div class="inline-block">
+                    <a href="#">
+                        <img src="/assets/img/graphql.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    </a>
+                </div>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Graph ql</a>
+                <div class="text-gray-400 mt-1">Coming Soon.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
 
 @endsection
