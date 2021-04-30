@@ -23,11 +23,11 @@
         <div class="categories text-sm grid grid-cols-6 gap-12">
             <div class="game mt-8">
                 <div class="inline-block">
-                    <a href="/category">
+                    <a href="#">
                         <img src="/assets/img/ignite.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
                     </a>
                 </div>
-                <a href="/category" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Ignite</a>
+                <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Ignite</a>
                 <div class="text-gray-400 mt-1">Available to watch.</div>
             </div>
             <div class="game mt-8">
