@@ -15,6 +15,8 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link rel="icon" src="{{ asset('assets/img/manifest-icon-512.png') }}">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body class="bg-gray-900 text-white h-screen antialiased leading-none font-sans">
     <div id="app">
