@@ -7,9 +7,9 @@
             <h2 class="text-3xl font-bold text-brand sm:text-4xl">
                 <span class="block">React Native Education</span>
             </h2>
-            <h2 class="text-3xl text-white sm:text-4xl">
-                <span class="block">Coming Soon.</span>
-            </h2>
+            <!-- <h2 class="text-3xl text-white sm:text-4xl">
+              <span class="block">Coming Soon.</span>
+            </h2>-->
             <!-- <p class="mt-4 text-lg leading-6 text-indigo-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
            <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
                Sign up for free
@@ -20,7 +20,7 @@
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-brand uppercase tracking-wide font-semibold">Screencasts</h2>
 
-        <div class="categories text-sm grid grid-cols-6 gap-12">
+        <div class="categories text-sm grid grid-col-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
             <div class="game mt-8">
                 <div class="inline-block">
                     <a href="/category">
