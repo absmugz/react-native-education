@@ -32,6 +32,7 @@ Route::get('/detail', function () {
 
 Route::get('/category/{category}', function (Category $category) {
     return view('category', [
+        'category' => $category,
         'tutorials' => $category->tutorials
     ]);
 });
