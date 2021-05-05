@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Category;
+use App\Models\Tutorial;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +28,20 @@ Route::get('/category', function () {
 
 Route::get('/detail', function () {
     return view('detail');
+});
+
+Route::get('/category/{category}', function (Category $category) {
+    return view('category', [
+        'tutorials' => $category->tutorials
+    ]);
+});
+
+Route::get('/tutorial/{tutorial}', function (Tutorial $tutorial) {
+    // dd($tutorial->videos->count();
+    return view('tutorial', [
+        'tutorial' => $tutorial,
+        'videos' => $tutorial->videos
+    ]);
 });
 
 Auth::routes();
