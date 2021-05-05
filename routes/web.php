@@ -19,7 +19,7 @@ Route::get('/', function () {
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', ['categories' => Category::all()]);
 });
 
 Route::get('/category', function () {

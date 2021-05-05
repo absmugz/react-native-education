@@ -44,13 +44,13 @@
                     <div class="recently-reviewed-container space-y-12 mt-8">
                         <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
                             <div class="flex-none">
-                                    <img src="/assets/img/ignite.png" alt="game cover" class="w-48 hover:opacity-75 transition ease-in-out duration-150">
+                                    <img src="{{ url('storage/'.$tutorial->category->thumbnail) }}"alt="game cover" class="w-48 hover:opacity-75 transition ease-in-out duration-150">
                             </div>
                             <div class="ml-6 lg:ml-12">
                                 <p class="block text-lg font-semibold leading-tight mt-4">{{ $tutorial->title }}</p>
                                 <div class="text-gray-400 mt-1">Beginners</div>
                                 <p class="mt-6 text-gray-400 hidden lg:block">
-                                    {{ $tutorial->body }}
+                                    {!! $tutorial->body !!}
                                 </p>
                             </div>
                         </div>

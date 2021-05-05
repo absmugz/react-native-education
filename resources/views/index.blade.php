@@ -21,16 +21,18 @@
         <h2 class="text-brand uppercase tracking-wide font-semibold">Screencasts</h2>
 
         <div class="categories text-sm grid grid-col-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
+            @foreach ($categories as $category)
             <div class="game mt-8">
                 <div class="inline-block">
-                    <a href="/category">
-                        <img src="/assets/img/ignite.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
+                    <a href="{{ $category->is_published ? '/category/' . $category->id : '#' }}">
+                        <img src="{{ url('storage/'.$category->thumbnail) }}" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
                     </a>
                 </div>
-                <a href="/category" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Ignite</a>
-                <div class="text-gray-400 mt-1">Available to watch.</div>
+                <a href="{{ $category->is_published ? '/category/' . $category->id : '#' }}" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">{{ $category->name }}</a>
+                <div class="text-gray-400 mt-1"> {{ $category->is_published ? 'Available to watch.' : 'Coming Soon.' }}</div>
             </div>
-            <div class="game mt-8">
+            @endforeach
+            <!-- <div class="game mt-8">
                 <div class="inline-block">
                     <a href="#">
                         <img src="/assets/img/react.png" alt="game cover" class="hover:opacity-75 transition ease-in-out duration-150">
@@ -74,7 +76,7 @@
                 </div>
                 <a href="#" class="block text-base font-semibold leading-tight hover:text-gray-400 mt-8">Graph ql</a>
                 <div class="text-gray-400 mt-1">Coming Soon.</div>
-            </div>
+            </div> -->
         </div>
 
     </div>
