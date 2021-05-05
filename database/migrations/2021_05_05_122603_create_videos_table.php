@@ -20,8 +20,8 @@ class CreateVideosTable extends Migration
             $table->text('excerpt');
             $table->text('body');
             $table->string('screencast');
-            $table->timestamps();
-            $table->timestamp('published_at')->nullable();
+            $table->timestamps();$table->timestamp('published_at')->nullable(
+            );
         });
     }
 

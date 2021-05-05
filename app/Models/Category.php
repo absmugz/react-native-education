@@ -9,7 +9,11 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug'];
+    protected $casts = [
+        'published_at' => 'datetime'
+    ];
+
+    protected $fillable = ['name', 'slug', 'thumbnail'];
 
     public function tutorials()
     {

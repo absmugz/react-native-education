@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
@@ -46,6 +47,7 @@ class Tutorial extends Resource
             Text::make('Title'),
             Text::make('Excerpt'),
             Trix::make('Body'),
+            BelongsTo::make('Category'),
         ];
     }
 

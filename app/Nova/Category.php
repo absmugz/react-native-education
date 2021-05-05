@@ -3,7 +3,10 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -44,6 +47,9 @@ class Category extends Resource
             ID::make(__('ID'), 'id')->sortable(),
             Text::make('Name'),
             Text::make('Slug'),
+            DateTime::make('Published At', 'published_at'),
+            Image::make('Thumbnail', 'thumbnail')->disk('public'),
+            Boolean::make('Is Published'),
         ];
     }
 
